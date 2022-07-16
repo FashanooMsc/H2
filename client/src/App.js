@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 
-//toastify - notifications etc..
-import { toast } from 'react-toastify'
-import "react-toastify/dist/ReactToastify.css";
+
+
 
 
 import LoginPage from './components/pages/LoginPage'
@@ -22,7 +21,6 @@ import MenuPage from './components/pages/MenuPage'
 import Dashboard from './components/pages/Dashboard'
 
 
-//toast.configure();
 
 export default function App() {
 
