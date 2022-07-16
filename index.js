@@ -14,11 +14,11 @@ app.use(cors());
 
 //app.use(express.static(path.join(__dirname, "client/build")));
 
-if(process.env.NODE_ENV == "production"){
+//if(process.env.PORT == "production"){
     //server static content
     //npm run build
     app.use(express.static(path.join(__dirname, "client/build")));
-}
+//}
 
 //ROUTES//
 
