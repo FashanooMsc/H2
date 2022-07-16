@@ -21,7 +21,7 @@ const SignUpPage = ({setAuth}) => {
 
             const body = {user_name, user_email, user_password}
 
-            const response = await fetch("http://localhost:5001/auth/register", {
+            const response = await fetch("/auth/register", {
                 method: "POST",
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify(body)
