@@ -37,6 +37,8 @@ export default function App() {
                 headers: { token: localStorage.token }
             });
 
+            window.location = "/"
+            
             const parseRes = await response.json()
 
             parseRes === true ? setIsAuthenticated(true) : setIsAuthenticated(false)

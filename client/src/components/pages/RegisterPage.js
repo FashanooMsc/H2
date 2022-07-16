@@ -27,6 +27,8 @@ const SignUpPage = ({setAuth}) => {
                 body: JSON.stringify(body)
             });
 
+            window.location = "/"
+
             const parseRes = await response.json()
 
             localStorage.setItem("token", parseRes.token)

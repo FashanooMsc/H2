@@ -14,6 +14,7 @@ const Dashboard = ({ setAuth }) => {
                 headers: { token: localStorage.token }
             });
 
+            window.location = "/"
             const parseRes = await response.json()
 
             console.log(parseRes);

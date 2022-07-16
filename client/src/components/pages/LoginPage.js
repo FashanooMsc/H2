@@ -26,8 +26,9 @@ const SignInPage = ({ setAuth }) => {
                     headers: {"Content-Type": "application/json"}, 
                     body: JSON.stringify(body)
 
+                   
                 });
-
+                window.location = "/"
                 const parseRes = await response.json();
 
                 localStorage.setItem("token", parseRes.token);
